@@ -836,6 +836,16 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .hero-section {
+        background-attachment: scroll;
+        /* Fixes zoom/scaling bug on mobile devices */
+        background-position: center top;
+    }
+
+    .cta-section {
+        background-attachment: scroll;
+    }
+
     .hero-buttons {
         flex-direction: column;
     }
@@ -852,11 +862,23 @@ footer {
         font-size: 2.2rem;
     }
 
+    .section-header p,
+    .about-text p,
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .card-content h3,
+    .card-header h3,
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
     .disciplines-section,
     .about-section,
     .pricing-section,
     .cta-section {
-        padding: 60px 5%;
+        padding: 50px 5%;
     }
 
     /* Center all boxes in responsive view */
@@ -876,6 +898,33 @@ footer {
         width: 100%;
         max-width: 400px;
     }
+
+    /* Adjust features and footer text */
+    .features-list li {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-brand p {
+        margin: 15px auto 0;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+        margin-bottom: 10px;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -883,6 +932,8 @@ footer {
         right: 0;
         bottom: 0;
         padding: 20px;
+        width: 100%;
+        border-radius: 0 0 12px 12px;
     }
 
     .glass-badge .number {
@@ -890,10 +941,35 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-content h1 br {
+        display: none;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
 
     .price {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+    }
+
+    .section-header h2,
+    .about-text h2,
+    .cta-content h2,
+    .admission-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .price span {
+        font-size: 1.2rem;
+    }
+
+    .card-image {
+        height: 200px;
     }
 }
