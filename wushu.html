@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterFit Martial Arts | Wushu</title>
+    <meta name="description"
+        content="Learn about Wushu at MasterFit Martial Arts. Who is the founder, the history of Shaolin Wushu, and what is Wushu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 100px 5% 50px;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--bg-dark), #111);
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 50vh;
+            min-height: 300px;
+            background-image: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&q=80&w=800');
+            background-size: cover;
+            background-position: center 30%;
+            position: relative;
+            margin-top: 80px;
+            /* offset navbar */
+        }
+
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.3) 0%, #0a0a0a 100%);
+        }
+
+        .content-section {
+            padding: 50px 5% 100px;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .content-section h2 {
+            color: var(--text-primary);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-family: var(--font-display);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        .content-section h3 {
+            color: var(--accent-primary);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-family: var(--font-display);
+        }
+
+        .content-section p {
+            margin-bottom: 25px;
+            font-size: 1.15rem;
+        }
+
+        .content-section strong {
+            color: var(--text-primary);
+        }
+
+        .note-box {
+            background: rgba(220, 38, 38, 0.05);
+            /* very faint red */
+            border-left: 4px solid var(--accent-primary);
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: '!';
+            position: absolute;
+            left: -20px;
+            top: 30px;
+            width: 36px;
+            height: 36px;
+            background: var(--accent-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+        }
+
+        .note-box h4 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: var(--font-display);
+        }
+
+        .note-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MASTER<span>FIT</span></a>
+            <div class="nav-links">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#disciplines" class="active">Disciplines</a>
+                <a href="index.html#about">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="index.html#contact" class="btn btn-outline">Join Now</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-banner"></div>
+
+    <header class="page-header fade-in-up" style="padding-top: 40px; background: none;">
+        <h1 style="color: var(--accent-primary);">WU<span class="highlight"
+                style="color: var(--text-primary);">SHU</span></h1>
+        <p style="font-size: 1.2rem; color: var(--text-secondary);">The Modern Marvel of Chinese Martial Arts</p>
+    </header>
+
+    <section class="content-section fade-in-up">
+        <h2>What is Wushu?</h2>
+        <p>Wushu (Chinese: "martial art") is both an exhibition and a full-contact sport derived from traditional
+            Chinese martial arts. While "Kung Fu" is a broader term, Wushu specifically refers to the standardized,
+            highly athletic, and aesthetically spectacular routines (Taolu) and full-contact sparring (Sanda) that have
+            been codified since 1949.</p>
+        <p>Wushu is renowned for its incredible acrobatics, speed, flexibility, and power. Practitioners perform jumps,
+            kicks, and complex weapons forms (using swords, staffs, and spears) that push the limits of human physical
+            capability, blending the ancient combat mechanics of Kung Fu with modern performance aesthetics.</p>
+
+        <div style="margin: 40px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <img src="images/wushu_fight.png" alt="Dynamic Wushu Fight Scene"
+                style="width: 100%; height: auto; display: block; filter: brightness(0.9);">
+        </div>
+
+        <h2>Shaolin Wushu & The Founder</h2>
+        <p>Much like traditional Kung Fu, the historical and spiritual roots of Wushu are inevitably tied to the Shaolin
+            Temple in Henan province. Shaolin Wushu (or Shaolin Quan) is the cornerstone upon which much of modern Wushu
+            was standardized.</p>
+
+        <h3>Bodhidharma (Ta Mo)</h3>
+        <p>Because Wushu is the modernized, sportified version of Chinese martial arts, its ultimate historical
+            "founder" is still revered as the Indian Buddhist monk <strong>Bodhidharma (Ta Mo)</strong>, the patriarch
+            of the Shaolin Temple who introduced the physical exercises that evolved into Shaolin Kung Fu in the 5th/6th
+            century.</p>
+        <p>The modern, standardized Wushu practiced in competitions today was developed in the mid-20th century by a
+            committee of the greatest Chinese martial arts masters under the direction of the Chinese government. They
+            synthesized the countless traditional styles—including prominent Shaolin forms—into a unified athletic
+            syllabus.</p>
+
+        <div class="note-box">
+            <h4>Important Note on Shaolin Wushu</h4>
+            <p>Shaolin Wushu retains the core philosophy of its ancient temple origins. The Shaolin monks believed that
+                mastering difficult physical movements was a form of "moving meditation." In Wushu, the intense focus
+                required to execute a perfect 720-degree spinning aerial kick is akin to deep Zen meditation.</p>
+            <p>It demands an unwavering union of intention (Yi) and force (Li). A master of Wushu doesn't just display
+                physical prowess, but demonstrates total control over their internal energy and mind.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="index.html#disciplines" class="btn btn-secondary">&larr; Back to Disciplines</a>
+            <a href="index.html#contact" class="btn btn-primary" style="margin-left: 20px;">Claim Free Trial</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">MASTER<span>FIT</span></a>
+                <p>Empowering individuals through the ancient and modern arts of combat.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#disciplines">Disciplines</a>
+                <a href="index.html#about">About Us</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="footer-social">
+                <h4>Contact Us</h4>
+                <a href="tel:+919995422610">+91 99954 22610</a>
+                <a href="tel:+918943783686">+91 89437 83686</a>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MasterFit Martial Arts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

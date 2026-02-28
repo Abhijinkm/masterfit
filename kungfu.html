@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterFit Martial Arts | Kung Fu</title>
+    <meta name="description"
+        content="Learn about Kung Fu at MasterFit Martial Arts. Who is the founder, the history of Shaolin Kung Fu, and what is Kung Fu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 100px 5% 50px;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--bg-dark), #111);
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 50vh;
+            min-height: 300px;
+            background-image: url('images/kung_fu.png');
+            background-size: cover;
+            background-position: center 30%;
+            position: relative;
+            margin-top: 80px;
+            /* offset navbar */
+        }
+
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.3) 0%, #0a0a0a 100%);
+        }
+
+        .content-section {
+            padding: 50px 5% 100px;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .content-section h2 {
+            color: var(--text-primary);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-family: var(--font-display);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        .content-section h3 {
+            color: var(--accent-primary);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-family: var(--font-display);
+        }
+
+        .content-section p {
+            margin-bottom: 25px;
+            font-size: 1.15rem;
+        }
+
+        .content-section strong {
+            color: var(--text-primary);
+        }
+
+        .note-box {
+            background: rgba(220, 38, 38, 0.05);
+            /* very faint red */
+            border-left: 4px solid var(--accent-primary);
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: '!';
+            position: absolute;
+            left: -20px;
+            top: 30px;
+            width: 36px;
+            height: 36px;
+            background: var(--accent-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+        }
+
+        .note-box h4 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: var(--font-display);
+        }
+
+        .note-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MASTER<span>FIT</span></a>
+            <div class="nav-links">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#disciplines" class="active">Disciplines</a>
+                <a href="index.html#about">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="index.html#contact" class="btn btn-outline">Join Now</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-banner"></div>
+
+    <header class="page-header fade-in-up" style="padding-top: 40px; background: none;">
+        <h1 style="color: var(--accent-primary);">KUNG <span class="highlight"
+                style="color: var(--text-primary);">FU</span></h1>
+        <p style="font-size: 1.2rem; color: var(--text-secondary);">The Ancient Chinese Art of Mastery</p>
+    </header>
+
+    <section class="content-section fade-in-up">
+        <h2>What is Kung Fu?</h2>
+        <p>Kung Fu, sometimes referred to as Wushu in modern contexts, is a broad term encompassing hundreds of styles
+            of Chinese martial arts. It emphasizes continuous fluid movements, rapid explosive strikes, powerful
+            footwork, and joint manipulation.</p>
+        <p>Beyond being merely a system of physical combat, Kung Fu is deeply rooted in ancient Chinese philosophy. It
+            focuses heavily on personal discipline, mental focus, the cultivation of internal energy (Qi or Chi), and
+            honorable moral character. At MasterFit, our Kung Fu training works to unite the mind, body, and spirit into
+            an unbreakable whole.</p>
+
+        <div style="margin: 40px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <img src="images/kungfu_action.png" alt="Dynamic Kung Fu Stance"
+                style="width: 100%; height: auto; display: block; filter: brightness(0.9);">
+        </div>
+
+        <h2>Shaolin Kung Fu & The Founder</h2>
+        <p>Among all Chinese martial arts, Shaolin Kung Fu is widely considered the oldest, most extensive, and most
+            famous style. It traces its origins to the legendary Shaolin Temple situated in Henan province, China.</p>
+
+        <h3>Bodhidharma (Ta Mo)</h3>
+        <p>While the Shaolin Temple likely had some martial traditions beforehand, an Indian Buddhist monk named
+            <strong>Bodhidharma</strong> (often referred to as Ta Mo in Chinese) is traditionally credited as the
+            foundational patriarch of Shaolin Kung Fu. Arriving at the temple around the 5th or 6th century, he observed
+            that the monks were physically weak and frequently fell asleep during rigorous meditation.
+        </p>
+        <p>To remedy this, Bodhidharma introduced a physical conditioning regime and a series of dynamic exercises to
+            strengthen their bodies and invigorate their minds. These initial exercises were designed to parallel the
+            movements of animals in nature, and over centuries, they evolved into the highly sophisticated combat and
+            spiritual techniques of Shaolin Kung Fu.</p>
+
+        <div class="note-box">
+            <h4>Important Note on Shaolin Kung Fu</h4>
+            <p>Shaolin Kung Fu is fundamentally an intricate blend of Zen Buddhism (Chan) and martial arts (Quan), often
+                summarized as "Chan Quan Yi Ti" (Zen and martial arts are one). The true master of Shaolin Kung Fu seeks
+                spiritual enlightenment through immense physical exertion and strict discipline.</p>
+            <p>Its philosophical core dictates that all learned martial skills should only be used for strict
+                self-defense, cultivating health, and the protection of the innocent—never for unprovoked aggression.
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="index.html#disciplines" class="btn btn-secondary">&larr; Back to Disciplines</a>
+            <a href="index.html#contact" class="btn btn-primary" style="margin-left: 20px;">Claim Free Trial</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">MASTER<span>FIT</span></a>
+                <p>Empowering individuals through the ancient and modern arts of combat.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#disciplines">Disciplines</a>
+                <a href="index.html#about">About Us</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="footer-social">
+                <h4>Contact Us</h4>
+                <a href="tel:+919995422610">+91 99954 22610</a>
+                <a href="tel:+918943783686">+91 89437 83686</a>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MasterFit Martial Arts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
