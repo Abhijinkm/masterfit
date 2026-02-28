@@ -110,16 +110,15 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 5%;
+    padding: 15px 5%;
     z-index: 1000;
     transition: var(--transition);
-    background: transparent;
+    background: rgba(7, 7, 7, 0.98);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar.scrolled {
-    background: rgba(7, 7, 7, 0.9);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
     padding: 15px 5%;
 }
 
@@ -134,6 +133,10 @@ a {
 .logo {
     font-size: 1.8rem;
     letter-spacing: 2px;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 .logo span {
@@ -938,6 +941,10 @@ footer {
 
     .glass-badge .number {
         font-size: 2rem;
+    }
+
+    .hero-content {
+        padding-top: 80px;
     }
 
     .hero-content h1 {
